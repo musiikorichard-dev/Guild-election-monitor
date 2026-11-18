@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: makerere-election-monitor
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    disk:
+      name: election-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: BIND_ADDRESS
+        value: 0.0.0.0
+      - key: DATA_FILE
+        value: /var/data/makerere-election-monitor.tsv
+      - key: SESSION_COOKIE_SECURE
+        value: "true"
+      - key: ADMIN_INITIAL_USERNAME
+        value: admin
+      - key: ADMIN_INITIAL_PASSWORD
+        sync: false

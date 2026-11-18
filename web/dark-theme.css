@@ -1,0 +1,220 @@
+:root {
+  color-scheme: dark;
+  --ink: #e7edf4;
+  --muted: #a4b0be;
+  --green: #66c98d;
+  --green-dark: #102f25;
+  --green-light: #1b3c2d;
+  --lunar: #222c37;
+  --line: #374553;
+  --surface: #1a232d;
+  --canvas: #10171f;
+  --amber: #e6bc6d;
+  --red: #f08d82;
+}
+.topbar, .app-sidebar, .panel, .stat-card, .official-sources {
+  border-color: #354250;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .2);
+}
+.topbar { border-bottom-color: #303b47; }
+.brand, .brand strong, .post-selector h2, .panel-heading h2,
+.agent-workspace-header h3, .workspace-subpanel .panel-heading h3,
+.setup-form h3, .admin-lists h3, .password-form h3,
+.official-sources summary { color: #e8eef5; }
+.brand small, .user-label, .connection, .sidebar-note,
+.hero p, .post-selector p, .post-selector label,
+.filters label, .panel-copy, .results-footnote, .empty-state,
+.candidate-vote-unit, .candidate-share, .agent-workspace-header p,
+.agent-section-heading p, .agent-task-panel .form-actions span,
+.agent-activity-card > p, .agent-activity-totals li,
+.account-heading small, .incident-filter, .incident-summary,
+.observation-heading time, .observation-card > small,
+.observation-description-text, .optional, .footer,
+footer, .official-sources { color: #aab6c3; }
+.eyebrow, .sidebar-heading { color: #96a5b4; }
+.sidebar-link { color: #c9d2dc; }
+.sidebar-link:hover { background: #27323e; }
+.sidebar-link.is-active {
+  border-color: #365845;
+  background: #1d382b;
+  color: #aee4be;
+}
+.live-pulse { box-shadow: 0 0 0 4px #203b2e; }
+.live-tag, .small-tag {
+  border-color: #365845;
+  background: #1d382b;
+  color: #aee4be;
+}
+.notice, .password-required {
+  border-color: #655536;
+  background: #302a1e;
+  color: #e8d8b7;
+}
+.notice strong, .password-required strong { color: #f0d99e; }
+.post-selector .post-selection-note { color: #e6c978; }
+.post-selector select, .filters select, .incident-filter select,
+.agent-assignment select {
+  border-color: #465563;
+  background-color: #17212b;
+  color: #e7edf4;
+}
+.stat-label { color: #b0bdc9; }
+.stat-card strong { color: #f1f5f8; }
+.stat-card small { color: #b0bdc9; }
+.stat-card .stat-time { color: #e7edf4; }
+.filters select:hover, .post-selector select:hover { border-color: #66c98d; }
+.panel-heading h2, .agent-section-heading h4 { color: #e7edf4; }
+.candidate-row, .agent-task-panel, .account-card,
+.observation-card, .agent-activity-card, .vote-grid label {
+  border-color: #394855;
+  background: #202a35;
+  color: #e7edf4;
+}
+.candidate-row.is-leading {
+  border-color: #3e7354;
+  background: #1b3529;
+}
+.candidate-name, .candidate-votes, .agent-overview-card > strong,
+.account-heading strong, .observation-labels > strong,
+.agent-activity-card .update-heading strong { color: #e7edf4; }
+.candidate-entry-name { color: #e7edf4; }
+.candidate-entry-label { color: #aab6c3; }
+.empty-state { color: #aab6c3; }
+.agent-activity-totals strong { color: #b4e6c1; }
+.candidate-status {
+  border-color: #3b684c;
+  background: #203d2d;
+  color: #b4e6c1;
+}
+.candidate-progress {
+  background-color: #35414e;
+  background-image: repeating-linear-gradient(to right, transparent 0, transparent calc(25% - 1px), #536170 calc(25% - 1px), #536170 25%);
+}
+.candidate-progress-fill { background: #617767; }
+.candidate-row.is-leading .candidate-progress-fill { background: #53bb7b; }
+.table-wrap th { border-bottom-color: #3a4653; color: #bdc8d3; }
+.table-wrap td { border-bottom-color: #35414e; color: #d7dfe7; }
+.table-wrap td:nth-child(3) { color: #aee4be; }
+.table-wrap tbody tr { border-color: #394855; background: #202a35; }
+.table-wrap tbody td::before { color: #aab6c3; }
+.update-item { border-top-color: #303b47; }
+.update-heading strong { color: #e7edf4; }
+.update-heading time, .update-item p, .update-item small { color: #aeb9c5; }
+.activity-intro { color: #aab6c3; }
+.update-item { border-left-color: #35414e; }
+.update-item::before { border-color: #202a35; background: #53bb7b; }
+.update-item:last-child { border-left-color: transparent; }
+.update-kicker, .update-time time { color: #aeb9c5; }
+.update-card { border-color: #394855; background: #202a35; }
+.update-card .update-heading strong { color: #e7edf4; }
+.update-type { border-color: #3b684c; background: #203d2d; color: #b4e6c1; }
+.update-meta > div { border-color: #35414e; background: #1a232d; }
+.update-meta dt { color: #aab6c3; }
+.update-meta dd { color: #e7edf4; }
+.update-footer { border-top-color: #35414e; }
+.update-footer span { color: #aab6c3; }
+.agent-workspace-header, .workspace-subpanel,
+.password-form { border-color: #35414e; }
+.agent-overview-card, .setup-form, .admin-list-section {
+  border-color: #394855;
+  background: #202a35;
+  color: #e7edf4;
+}
+.agent-overview-card > span, .agent-overview-card > small,
+.agent-section-heading p, .field-title, .form-help,
+#candidate-post-help { color: #aab6c3; }
+.agent-tabs { border-color: #394855; background: #202a35; }
+.agent-tab { color: #b5c1cd; }
+.agent-tab:hover { background: #2a3541; }
+.agent-tab.is-selected {
+  border-color: #3b684c;
+  background: #1d382b;
+  color: #b4e6c1;
+}
+.form-grid > label, .setup-form label, .password-form label,
+.incident-form label, .modal label { color: #d3dce5; }
+.form-grid input, .form-grid select, .setup-form input,
+.setup-form select, .password-form input, .incident-form input,
+.incident-form select, .incident-form textarea, .modal input,
+.modal select, .modal textarea {
+  border-color: #465563;
+  background: #141d26;
+  color: #e7edf4;
+}
+.form-grid input::placeholder, .setup-form input::placeholder,
+.incident-form textarea::placeholder { color: #82909e; }
+.vote-grid input {
+  border-color: #536372;
+  background: #141d26;
+  color: #f1f5f8;
+}
+.form-actions span { color: #aab6c3; }
+.assigned-centre {
+  border-color: #365845;
+  background: #1d382b;
+  color: #b4e6c1;
+}
+.account-status, .priority-tag, .observation-status {
+  border-color: #465563;
+  background: #293440;
+  color: #c4ced8;
+}
+.account-status.is-active, .observation-status.is-resolved {
+  border-color: #3b684c;
+  background: #203d2d;
+  color: #b4e6c1;
+}
+.account-status.is-disabled, .observation-status {
+  border-color: #704b49;
+  background: #382827;
+  color: #f0aaa2;
+}
+.observation-card.is-urgent {
+  border-color: #704b49;
+  background: #302322;
+}
+.priority-tag.is-urgent {
+  border-color: #704b49;
+  background: #462927;
+  color: #f0aaa2;
+}
+.observation-resolution {
+  border-left-color: #4c9565;
+  background: #20392c;
+  color: #c0e4c9;
+}
+.observation-actions, .agent-activity-totals li { border-color: #35414e; }
+.incident-summary { color: #bac5d0; }
+.account-notice { color: #e6c978; }
+.official-sources { border-color: #354250; }
+.official-sources summary { color: #e7edf4; }
+.source-links a { color: #8bd5a5; }
+footer { color: #9eacba; }
+.button-outline {
+  border-color: #465563;
+  background: #26313d;
+  color: #dbe3eb;
+}
+.button-outline:hover { background: #303c49; }
+.button-primary { background: #35885a; color: #fff; }
+.modal {
+  border-color: #394754;
+  background: #1b2530;
+  color: #e7edf4;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, .45);
+}
+.modal-close { background: #2a3541; color: #c2ccd6; }
+.modal-actions { border-top-color: #35414e; }
+.toast {
+  border-color: #365845;
+  background: #1b2d24;
+  color: #c0e4c9;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .3);
+}
+.toast.error { border-color: #704b49; color: #f0aaa2; }
+
+@media (max-width: 560px) {
+  .candidate-row { padding: 14px; }
+}
